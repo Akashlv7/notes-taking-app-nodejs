@@ -1,0 +1,26 @@
+// const square = function (x) {
+//     return x * x;
+// }
+
+// const square = (x) => {
+//     return x * x;
+// }
+
+// const square = (x) => x *x
+
+
+// console.log(square(7))
+
+const event = {
+    name: 'BirthDay Party',
+    guestList: ["Aakash", "Ranjana", "Akshatha"],
+    printGuests () {
+        console.log('Guests for the event: ' + this.name)
+
+        this.guestList.forEach( (guest) => {
+            console.log(guest + " is attending " + this.name)
+        } )
+    }
+}
+
+event.printGuests()
